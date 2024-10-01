@@ -1,14 +1,16 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './loginpage/LoginPage';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>Hello World</h1>
-                <p>This is my modified React app.</p>
-            </header>
-        </div>
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route path="/" element={<LoginPage />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
