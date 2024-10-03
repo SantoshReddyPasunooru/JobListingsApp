@@ -31,21 +31,21 @@ body{
     border: 3px solid black; /* Border: 2px solid black */
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Shadow effect */
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 1); /* Inner shadow effect */
-
-
-
-
-
-
+    align-content: center;
 
 }
+
+
+.loginDetailshr{
+    background-color: rgba(0,0,0,1);
+    margin-left: 50px;
+}
 .loginDetailstitle{
-    margin-left: 100px;
+    margin-left: 120px;
     padding-bottom: 30px;
     color: black;
     font-family: "Eras Bold ITC", sans-serif;
     font-size: 35px;
-    padding-top: 100px;
 
 
 }
@@ -58,4 +58,53 @@ body{
     font-size: 20px;
 
     color: black;
+}
+
+.usernameinput, .passwordinput{
+    width: 100%;
+    height: 40px;
+
+    font-family: "Eras Medium ITC", sans-serif;
+    font-size: 20px;
+
+
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5px;
+
+}
+
+.loginbutton, .registerbutton{
+    background-color: rgba(255, 141, 141, 0.8);
+    color: white;
+
+    width: 35%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.6);
+
+    font-family: "Eras Medium ITC", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.forgotpassword, .description{
+    color: darkblue;
+
+
+    font-family: "Eras Medium ITC", sans-serif;
+    font-size: 18px;
+}
+
+
+.bahubaligate{
+    font-family: sans-serif;
+    color: #540000;
+    margin-left: 60px;
+    font-size: 50px;
 }

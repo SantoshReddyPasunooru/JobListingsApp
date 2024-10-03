@@ -5,10 +5,22 @@ function LoginPage() {
     return (
         <div>
             <form className="loginform">
-                    <text className="loginDetailstitle"> Login Details</text>
+                <hr/>
+                <text className="bahubaligate"> Bahubali Gate</text>
+                <br/>
+                <text className="description"> Only Mahismathi people allowed inside after checking... </text>
+                <hr/>
+                <text className="loginDetailstitle"> Login Details</text>
+                <hr className="loginDetailshr"/>
+
                 <div>
-                    <text className="username">Username :</text>
-                    <input type={"text"} className="usernameinput" placeholder={"Enter Username"} />
+                    <input type={"text"} className="usernameinput" placeholder={"  Username or Email"}/>
+                    <input type={"text"} className="passwordinput" placeholder={"  Password"}/>
+                    <button type={"submit"} className="loginbutton">Login</button>
+                    <button type={"submit"} className="registerbutton">Register</button>
+                    <br/>
+                    <text className="forgotpassword"><b>forgot password ?</b></text>
+                    <hr/>
                 </div>
 
 
