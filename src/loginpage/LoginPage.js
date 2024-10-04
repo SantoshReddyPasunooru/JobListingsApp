@@ -14,14 +14,14 @@ function LoginPage() {
         <div className="LoginPagecontainer">
             <form className="loginform">
                 <text className="jlpage"> Job Listings Page</text>
-                <text className="description"> 1000+ jobs updated everyday... </text>
+                <text className="description"> 1000+ jobs updated everyday...</text>
                 <text className="loginDetailstitle"> Login Details</text>
                 <hr/>
 
-                <div>
+                <div className="logindetailsentry">
                     <input type={"text"} className="usernameinput" placeholder={"  Username or Email"}/>
                     <input type={"text"} className="passwordinput" placeholder={"  Password"}/>
-                    <button type={"submit"} className="loginbutton">Login</button>
+                    <button type={"button"} onClick={() => navigate('/home')} className="loginbutton">Login</button>
                     <button type={"button"} onClick={registerbutton} className="registerbutton">Register</button>
                     <br/>
                     <text className="forgotpassword"><b>forgot password ?</b></text>
@@ -31,7 +31,9 @@ function LoginPage() {
 
             </form>
         </div>
-    );
+
+)
+    ;
 }
 
 export default LoginPage;

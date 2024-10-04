@@ -11,7 +11,7 @@
     /* displaying box at center */
     display: flex;
     justify-content: right;  /* Centers horizontally */
-    align-items: center;
+    align-items: top;
     background-size: cover;
 
 }
@@ -19,10 +19,11 @@
 .loginform {
     background-color: rgba(255, 255, 255, 0.7);
     width: 400px;
-    height: 350px;
-    padding: 20px;
+    height: 400px;
+    padding-top: 20px;
     align-content: center;
     align-items: center;
+    margin-top: 30px;
     margin-right: 60px;
     border-radius: 15px; /* Rounded corners */
     border: 3px solid black; /* Border: 2px solid black */
@@ -43,17 +44,18 @@
 .username{
 
     font-family: "Eras Medium ITC", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 
     color: black;
 }
 
 .usernameinput, .passwordinput{
-    width: 100%;
+    width: 80%;
     height: 40px;
 
     font-family: "Eras Medium ITC", sans-serif;
     font-size: 20px;
+
 
 
     border-radius: 8px;
@@ -112,4 +114,8 @@
     margin-bottom: 20px;
 
 
+}
+
+.logindetailsentry{
+    text-align: center;
 }

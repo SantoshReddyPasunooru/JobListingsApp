@@ -1,0 +1,18 @@
+/* src/Footer.css */
+
+footer {
+    margin-top: auto; /* Push footer to bottom of page */
+    background-color: #f1f1f1; /* Footer background color */
+    padding: 20px; /* Space around footer content */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    font-family: "Eras Medium ITC", sans-serif; /* Your preferred font */
+    color: #333; /* Dark gray text */
+}
+
+.footer p {
+    margin: 5px 0; /* Margin for spacing */
+}
