@@ -89,8 +89,9 @@ function HomePage() {
                 </button>
             </div>
             <button className="profile-button" onClick={handleProfileClick}>
-                <img src="../assets/profile-icon.png" alt="Profile"/>
+                
             </button>
+
 
             <footer>
                 <div className="footer-content">

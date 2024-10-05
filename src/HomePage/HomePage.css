@@ -65,10 +65,17 @@ h1 {
 }
 
 .profile-button {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
-    background: none;
+    width: 170px;
+    height: 49px;
+    background-image: url("../assets/logo.jpg");
+    background-size: contain;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
