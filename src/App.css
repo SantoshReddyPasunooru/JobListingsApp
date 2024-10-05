@@ -6,21 +6,8 @@
     min-height: 100vh; /* Full height of the viewport */
 }
 
-footer {
-    margin-top: auto; /* Pushes footer to the bottom */
-    background-color: #f1f1f1; /* Background color for footer */
-    padding: 20px; /* Padding for footer */
-    text-align: center; /* Center footer text */
-    width: 100%; /* Full width */
-    position: relative; /* Ensure it's positioned relative to the parent */
-}
+
 
 /* Optional: Add styles for better appearance */
-.footer-content {
-    font-family: "Eras Medium ITC", sans-serif; /* Change to your preferred font */
-    color: #333; /* Dark gray color */
-}
 
-.footer p {
-    margin: 5px 0; /* Margin for better spacing */
-}
+

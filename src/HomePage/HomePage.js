@@ -44,6 +44,14 @@ function HomePage() {
         navigate('/profile'); // Add your profile page route here
     };
 
+    const apply = () => {
+        navigate('/application'); // Add your profile page route here
+    };
+
+    const JobDetails = () => {
+        navigate('/jobpage'); // Add your profile page route here
+    };
+
     const nextJob = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % jobs.length);
     };
@@ -72,7 +80,7 @@ function HomePage() {
                             <h3>{job.company}</h3>
                             <h3>{job.timeperiod}</h3>
                             <p>{job.description}</p>
-                            <button className="apply-button">Apply</button>
+                            <button className="apply-button" onClick={JobDetails}>Apply</button>
                         </div>
                     ))}
                 </div>
