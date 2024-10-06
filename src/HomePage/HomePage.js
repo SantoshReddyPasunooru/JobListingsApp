@@ -1,3 +1,4 @@
+// HomePage.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
@@ -33,23 +34,14 @@ const jobs = [
         timeperiod: '24 Months',
         description: 'Automate deployment processes and manage CI/CD pipelines.',
     },
-    // Add more job entries as needed
 ];
 
 function HomePage() {
     const navigate = useNavigate();
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const handleProfileClick = () => {
-        navigate('/profile'); // Add your profile page route here
-    };
-
-    const apply = () => {
-        navigate('/application'); // Add your profile page route here
-    };
-
-    const JobDetails = () => {
-        navigate('/jobpage'); // Add your profile page route here
+    const handleNavigation = (path) => {
+        navigate(path);
     };
 
     const nextJob = () => {
@@ -68,11 +60,14 @@ function HomePage() {
 
     return (
         <div className="home-container">
-            <h1>Job Listings</h1>
+            <div className="top-right-nav">
+                <span onClick={() => handleNavigation('/application')}>Application Dashboard</span> |
+                <span onClick={() => handleNavigation('/profile')}>Profile Page</span> |
+                <span onClick={() => handleNavigation('/')}>Logout</span>
+            </div>
+            <h1 className="Joblistings">Job Listings</h1>
             <div className="carousel">
-                <button className="arrow-button left" onClick={prevJob}>
-                    ◀
-                </button>
+                <button className="arrow-button left" onClick={prevJob}>◀</button>
                 <div className="job-cards">
                     {displayedJobs.map((job, index) => (
                         <div className="job-card" key={index}>
@@ -80,32 +75,20 @@ function HomePage() {
                             <h3>{job.company}</h3>
                             <h3>{job.timeperiod}</h3>
                             <p>{job.description}</p>
-                            <button className="apply-button" onClick={JobDetails}>Apply</button>
+                            <button className="apply-button" onClick={() => handleNavigation('/jobpage')}>Apply</button>
                         </div>
                     ))}
                 </div>
-                <button className="arrow-button right" onClick={nextJob}>
-                    ▶
-                </button>
+                <button className="arrow-button right" onClick={nextJob}>▶</button>
             </div>
-            <button className="profile-button" onClick={handleProfileClick}>
-                
-            </button>
-
-
             <footer>
                 <div className="footer-content">
                     <p>&copy; 2024 Your Company Name</p>
-                    <p>Address: 1234 Your Street, Your City, Your Country ; Email: info@yourcompany.com ; Phone: +1 234
-                        567
-                        890</p>
+                    <p>Address: 1234 Your Street, Your City, Your Country ; Email: info@yourcompany.com ; Phone: +1 234 567 890</p>
                 </div>
             </footer>
         </div>
-
-
-    )
-        ;
+    );
 }
 
 export default HomePage;

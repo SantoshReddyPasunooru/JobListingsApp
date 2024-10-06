@@ -1,9 +1,25 @@
+/* HomePage.css */
 .home-container {
     padding: 20px;
+    position: relative; /* for absolute positioning of the top-right nav */
+}
+
+.top-right-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.top-right-nav span {
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 h1 {
     text-align: center;
+    color: white; /* updated for better visibility */
 }
 
 .carousel {
@@ -38,7 +54,7 @@ h1 {
 }
 
 .apply-button:hover {
-    background-color: rgba(255, 100, 100, 0.8);
+    background-color: rgb(213, 23, 23); /* brighter red for hover */
 }
 
 .arrow-button {
@@ -64,18 +80,7 @@ h1 {
     right: 10px; /* Position on the right */
 }
 
-.profile-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 170px;
-    height: 49px;
-    background-image: url("../assets/logo.jpg");
-    background-size: contain;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
+footer .footer-content {
+    text-align: center;
+    color: white; /* Ensure footer text is visible */
 }
-
