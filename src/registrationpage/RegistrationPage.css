@@ -71,3 +71,14 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+.button:hover {
+    background-color: rgb(213, 23, 23);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: center;
+}
