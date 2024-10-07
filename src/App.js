@@ -6,6 +6,7 @@ import HomePage from './HomePage/HomePage'; // Import the HomePage component
 import ProfilePage from './ProfilePage/ProfilePage';
 import JobDetails from './JobDetails/JobDetails';
 import Applications from './Applications/Applications';
+import PasswordRecovery from './passwordrecovery/passwordrecovery';
 import $ from 'jquery'; // Import jQuery
 
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
                     <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/jobpage" element={<JobDetails />} />
                     <Route path="/application" element={<Applications />} />
+                    <Route path="/passwordrecovery" element={<PasswordRecovery />} />
                 </Routes>
 
             </div>

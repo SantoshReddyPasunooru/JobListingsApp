@@ -17,6 +17,11 @@ function LoginPage() {
         navigate('/register');
     };
 
+    const passwordrecovery = (e) =>{
+        e.preventDefault();
+        navigate('/passwordrecovery');
+    }
+
     // Function to handle login button click
     const handleLogin = (e) => {
         e.preventDefault();
@@ -66,7 +71,7 @@ function LoginPage() {
                         <button onClick={handleLogin} className="loginbutton">Login</button>
                         <button onClick={registerbutton} className="registerbutton">Register</button>
                     </div>
-                    <span className="forgotpassword"><b>Forgot password?</b></span>
+                    <span className="forgotpassword" onClick={passwordrecovery}><b>Forgot password?</b></span>
                     <hr />
                     {/* Loading spinner */}
                     <div className="loading-spinner"></div>
