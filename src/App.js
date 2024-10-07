@@ -6,10 +6,26 @@ import HomePage from './HomePage/HomePage'; // Import the HomePage component
 import ProfilePage from './ProfilePage/ProfilePage';
 import JobDetails from './JobDetails/JobDetails';
 import Applications from './Applications/Applications';
+import $ from 'jquery'; // Import jQuery
 
 import './App.css';
 
 function App() {
+    React.useEffect(() => {
+        // jQuery smooth scroll effect
+        $('a').on('click', function(event) {
+            event.preventDefault();
+            const target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 1000);
+        });
+
+        return () => {
+            $('a').off('click'); // Cleanup
+        };
+    }, []);
+
     return (
         <Router>
             <div className="App">

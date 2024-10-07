@@ -1,5 +1,6 @@
+/* ProfilePage.css */
+/* ProfilePage.css */
 .profileContainer {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,23 +12,20 @@
     margin: auto;
     position: relative;
     margin-top: 100px;
-
+    margin-bottom: 100px; /* Add margin at the bottom */
 }
 
 body {
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url('../assets/loginpage.jpg') no-repeat fixed center;
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Align items vertically */
-
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-
 
 .profileTitle {
     font-family: 'Arial', sans-serif;
@@ -89,11 +87,12 @@ body {
 }
 
 .footer-content {
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0);
     text-align: center;
-    position: fixed; /* Fix the footer at the bottom of the page */
-    bottom: 0; /* Position it at the bottom */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    padding: 10px 0; /* Padding for aesthetics */
+    position: relative; /* Change from fixed to relative */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto; /* Ensure footer stays at the bottom */
 }

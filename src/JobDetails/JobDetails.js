@@ -1,20 +1,25 @@
 // JobDetails.js
-import './JobDetails.css'; // Create a CSS file for styling if needed
+import './JobDetails.css';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import $ from 'jquery'; // Import jQuery
 
 function JobDetails() {
     const navigate = useNavigate();
     const [currentIndex, setCurrentIndex] = useState(0);
+
     const handleNavigation = (path) => {
         navigate(path);
     };
-    const apply = () => {
-        navigate('/application'); // Add your profile page route here
-    };
-    
-    return (
 
+    const apply = () => {
+        // Use jQuery to show an animation effect before navigating
+        $('.applyButton').fadeOut(200, () => {
+            navigate('/application'); // Navigate after fading out
+        });
+    };
+
+    return (
         <div className="jobDetailsContainer">
             <div className="top-right-nav">
                 <span onClick={() => handleNavigation('/home')}>Jobs</span> |

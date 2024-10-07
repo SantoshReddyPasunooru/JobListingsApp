@@ -9,6 +9,25 @@
     align-items: center;
 }
 
+/* Spinner Styles */
+.loading-spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Light background */
+    border-top: 8px solid rgba(255, 141, 141, 0.8);
+    border-radius: 50%;
+    width: 50px; /* Size of the spinner */
+    height: 50px;
+    animation: spin 1s linear infinite; /* Spinner animation */
+    position: absolute;
+    z-index: 9999; /* Make sure it's above other elements */
+    display: none; /* Hide by default */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .loginform {
     background-color: rgba(255, 255, 255, 0.8);
     width: 500px;
@@ -20,13 +39,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative; /* Necessary for positioning the loading spinner */
 }
 
 .logo {
     width: 100%; /* Adjust logo size */
     height: 100%;
     margin-bottom: 10px;
-
 }
 
 .jlpage {
@@ -75,7 +94,7 @@
 }
 
 .loginbutton, .registerbutton {
-    background-color: rgb(255, 141, 141, 0.8);
+    background-color: rgba(255, 141, 141, 0.8);
     color: white;
     width: 48%;
     height: 40px;

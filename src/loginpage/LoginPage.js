@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
+import $ from 'jquery'; // Import jQuery
 
 function LoginPage() {
     const navigate = useNavigate();
@@ -25,7 +26,17 @@ function LoginPage() {
         }
         // Assume validation passed
         setError('');
-        navigate('/home');
+
+        // Show loading spinner
+        $('.loading-spinner').css('display', 'block'); // Show the spinner
+
+        // Simulate API call with setTimeout
+        setTimeout(() => {
+            // Assume login is successful
+            $('.loading-spinner').css('display', 'none'); // Hide the spinner
+            navigate('/home');
+        }, 2000);
+
     };
 
     return (
@@ -57,6 +68,9 @@ function LoginPage() {
                     </div>
                     <span className="forgotpassword"><b>Forgot password?</b></span>
                     <hr />
+                    {/* Loading spinner */}
+                    <div className="loading-spinner"></div>
+
                 </div>
                 <div className="footer">
                     <p>&copy; 2024 GettingHired.com</p>
