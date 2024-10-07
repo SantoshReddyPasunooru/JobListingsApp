@@ -27,7 +27,7 @@ function LoginPage() {
         // Assume validation passed
         setError('');
 
-        // Show loading spinner
+        // Show loading spinner - Jquery
         $('.loading-spinner').css('display', 'block'); // Show the spinner
 
         // Simulate API call with setTimeout
